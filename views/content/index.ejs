@@ -1,84 +1,85 @@
 <!-- Name: Jonathan Lee #822937603
      File Name: index.ejs
-     Website Name: 
+     Website Name: https://envirofit-prototype.herokuapp.com/
      Description: handles HTML for the homepage page
 -->
 
 <% include ../partials/header.ejs %>
 
-<!-- MAIN CONTENT -->
+  <!-- MAIN CONTENT -->
 
-      <body>
+  <body>
 
-        <div class="hero-image">
-            <img src="assets/Quote_Banner.jpg" alt="Get A Quote">
-          <div class="hero-text">
-            <h1 style="font-size:60px">A CLEANER FUTURE</h1>
-              <button>GET QUOTE</button>
-          </div>
+    <div class="hero-image">
+      <img src="assets/Quote_Banner.jpg" alt="Get A Quote">
+      <div class="hero-text">
+        <h1 style="font-size:60px">A CLEANER FUTURE</h1>
+        <button>GET QUOTE</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a name=about href="/projects"><img src="assets/EnvirofitInc_Carousel_VFD_Transparent.png"></a>
         </div>
-<br>
-<br>
-<br>
-<br>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol> 
-          
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <a name=about href="/projects"><img src="assets/EnvirofitInc_Carousel_VFD_Transparent.png"></a>
-              </div>
-          
-              <div class="item">
-                <a name=project href="/projects"><img src="assets/EnvirofitInc_Carousel_News.png"></a>
-              </div>
-          
-              <div class="item">
-                <a name=project href="/projects"><img src="assets/EnvirofitInc_Carousel_CaseStudy.png"></a>
-              </div>
-          
-              <div class="item">
-                <a name=project href="/projects"><img src="assets/EnvirofitInc_Carousel_Affordable.jpg"></a>
-              </div>
-            </div>
-          
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+
+        <div class="item">
+          <a name=project href="/projects"><img src="assets/EnvirofitInc_Carousel_News.png"></a>
         </div>
-        <br>
-        <br>
-        <h1 style="font-size:60px; text-align:center">What is Envirofit?</h1>
-        <br>
-        <br>
-        <div style="text-align:center; margin: auto; width: 50%; border: 3px solid green; padding: 10px;">
-        <p style="font-size:30px; text-align:center; margin: auto;">
-          Evirofit is awesome. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Curabitur non dolor ac augue aliquam maximus. 
-          Phasellus lacinia consectetur dolor, non ultrices lorem faucibus ac. 
-          Duis consequat convallis neque, sit amet scelerisque sapien aliquam vitae. 
-          Maecenas non eleifend libero, in molestie orci. 
-          Phasellus auctor justo id lorem tincidunt mollis. 
-          Sed dignissim porta orci dignissim laoreet. 
-          Donec venenatis fringilla aliquet. Aliquam et ex neque. 
-          Proin pharetra nisi in sem pulvinar vestibulum. 
-          Fusce sollicitudin velit eu aliquam venenatis.
-        </p>
+
+        <div class="item">
+          <a name=project href="/projects"><img src="assets/EnvirofitInc_Carousel_CaseStudy.png"></a>
         </div>
-      </body>
+
+        <div class="item">
+          <a name=project href="/projects"><img src="assets/EnvirofitInc_Carousel_Affordable.jpg"></a>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br>
+    <br>
+    <div style="margin: auto; width: 50%; padding: 10px;">
+      <h1 style="font-size:60px; text-align:left">What is Envirofit?</h1>
+    </div>
+    <br>
+    <br>
+    <div style="margin: auto; width: 50%; border: 3px solid green; padding: 10px;">
+      <p style="font-size:30px; text-align:left; margin: auto;">
+        Evirofit is awesome. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Curabitur non dolor ac augue aliquam maximus.
+        Phasellus lacinia consectetur dolor, non ultrices lorem faucibus ac. 
+        Duis consequat convallis neque, sit amet scelerisque
+        sapien aliquam vitae. Maecenas non eleifend libero, in molestie orci. 
+        Phasellus auctor justo id lorem tincidunt mollis.
+        Sed dignissim porta orci dignissim laoreet. 
+        Donec venenatis fringilla aliquet. Aliquam et ex neque. Proin pharetra
+        nisi in sem pulvinar vestibulum. Fusce sollicitudin velit eu aliquam venenatis.
+      </p>
+    </div>
+  </body>
 
 
-<% include ../partials/footer.ejs %>
+  <% include ../partials/footer.ejs %>
