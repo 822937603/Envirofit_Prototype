@@ -1,7 +1,7 @@
 /*
   Name: Jonathan Lee #822937603
   File Name: index.js
-  Website Name: https://jonathanleeportfolio.herokuapp.com/
+  Website Name: https://envirofit-prototype.herokuapp.com/
   Description: index routing for the views
 */
 
@@ -26,7 +26,7 @@ router.get('/about', (req, res, next) => {
    });
 });
 
-/* GET products page. */
+/* GET projects page. */
 router.get('/projects', (req, res, next) => {
   res.render('content/projects', {
     title: 'Projects'
@@ -47,17 +47,5 @@ router.get('/contact', (req, res, next) => {
    });
 });
 
-/* GET devilsCauseway page. */
-router.get('/devilsCauseway', (req, res, next) => {
-  res.render('content/devilsCauseway', {
-    title: 'Devils Causeway Demo'
-   });
-});
-
-router.get('/IWantTheBoomBoom', (req, res, next) => {
-  res.render('content/IWantTheBoomBoom', {
-    title: 'I Want The BoomBoom Demo'
-   });
-});
 
 module.exports = router;
